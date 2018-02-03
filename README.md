@@ -10,7 +10,7 @@ npm run develop
 ## Developing
 
 ### Built With
-(Gatsby)[https://www.gatsbyjs.org/docs/]
+[Gatsby](https://www.gatsbyjs.org/docs/)
 
 ### Prerequisites
 - Node
@@ -26,7 +26,7 @@ npm run build
 ```
 
 ### Linting
-Linted using eslint with prettier and sass-lint. Lints on pre-commit with (lint-staged)[https://github.com/okonet/lint-staged].
+Linted using eslint with prettier and sass-lint. Lints on pre-commit with [lint-staged](https://github.com/okonet/lint-staged).
 
 ### Deploying / Publishing
 
