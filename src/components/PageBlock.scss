@@ -1,0 +1,16 @@
+@import '../sass/colors';
+
+.page-block {
+  position: relative;
+  box-sizing: border-box;
+}
+
+.page-block__content {
+  padding: 0 1rem;
+  max-width: 25rem;
+  margin: 0 auto;
+
+  @media print {
+    max-width: 35rem;
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "name": "viktorkalajo.se",
+  "description": "Personal website for Viktor Kalajo",
+  "engines": {
+    "node": "7.10.1",
+    "npm": "4.2.0"
+  },
+  "version": "1.0.0",
+  "author": "Viktor Kalajo <viktor.kalajo@gmail.com>",
+  "dependencies": {
+    "gatsby": "^1.9.158",
+    "gatsby-link": "^1.6.34",
+    "gatsby-plugin-google-analytics": "1.0.16",
+    "gatsby-plugin-react-helmet": "^2.0.3",
+    "gatsby-plugin-resolve-src": "1.0.0",
+    "gatsby-plugin-sass": "1.0.16",
+    "normalize.css": "7.0.0",
+    "react-helmet": "^5.2.0"
+  },
+  "main": "n/a",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"src/**/*.js\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "git add"
+    ],
+    "*.scss": [
+      "sass-lint -q -v"
+    ]
+  },
+  "devDependencies": {
+    "eslint": "3.19.0",
+    "eslint-config-prettier": "2.1.1",
+    "eslint-plugin-jsx-a11y": "5.0.3",
+    "eslint-plugin-prettier": "2.2.0",
+    "eslint-plugin-react": "7.0.1",
+    "husky": "0.14.3",
+    "lint-staged": "6.1.0",
+    "prettier": "^1.10.2"
+  }
+}

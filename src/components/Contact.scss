@@ -1,0 +1,60 @@
+@import '../sass/breakpoints';
+@import '../sass/mixins';
+
+.contact {
+  page-break-inside: avoid;
+}
+
+.contact__portrait {
+  border-radius: 50%;
+  width: 100px;
+  margin: 0 auto 2rem;
+  display: block;
+  float: right;
+
+  @media (min-width: $sm) {
+    width: 150px;
+  }
+
+  @media (min-width: $lg) {
+    width: 200px;
+  }
+
+  @media print {
+    display: none;
+  }
+}
+
+.contact__list {
+  @extend %clearfix;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.contact__social {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+
+  @media print {
+    display: none;
+  }
+
+  li {
+    float: left;
+    margin-right: .5rem;
+    width: 32px;
+    height: 32px;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.contact__phone {
+  // Sorry, dont like them cold calls
+  @media screen {
+    display: none;
+  }
+}

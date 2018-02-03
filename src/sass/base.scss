@@ -1,0 +1,137 @@
+@import './colors';
+@import './breakpoints';
+
+body,
+html {
+  background: $white;
+  color: $black;
+  font-family: 'et-books';
+  font-size: 16px;
+
+  @media (min-width: $sm) {
+    font-size: 22px;
+  }
+
+  @media (min-width: $md) {
+    font-size: 24px;
+  }
+
+  @media (min-width: $lg) {
+    font-size: 26px;
+  }
+
+  @media (min-width: $xl) {
+    font-size: 30px;
+  }
+}
+
+h1,
+h2,
+h3 {
+  break-after: avoid;
+}
+
+h1 {
+  font-size: 2.5rem;
+  padding-top: 1rem;
+  margin-top: 0;
+  border-bottom: .3rem solid $red;
+  margin-bottom: 1.7rem;
+  line-height: 1;
+  letter-spacing: .1rem;
+
+  @media (min-width: 1200px) {
+    font-size: 3rem;
+  }
+
+  span {
+    display: block;
+    font-size: .5em;
+    margin-bottom: .5em;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+  }
+}
+
+h2 {
+  font-size: 1.5rem;
+  border-bottom: .2rem solid $red;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+  margin-top: 3rem;
+
+  @media (min-width: 1200px) {
+    font-size: 2rem;
+  }
+}
+
+h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  line-height: 1.5rem;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+
+  span {
+    display: block;
+    font-size: .75rem;
+    line-height: 1rem;
+    letter-spacing: .12rem;
+  }
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin-bottom: 1rem;
+  margin-top: 0;
+}
+
+a {
+  color: darken($red, 10%);
+  font-weight: bold;
+
+  &:visited,
+  &:hover,
+  &:focus {
+    color: darken($red, 10%);
+  }
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
+}
+
+ul {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+
+  &.tags {
+    padding: 0;
+    list-style-type: none;
+
+    &:after {
+      content: '';
+      display: block;
+      clear: both;
+    }
+
+    li {
+      background-color: lighten($red, 35%);
+      -webkit-print-color-adjust: exact;
+      float: left;
+      margin-right: .5rem;
+      margin-bottom: .5rem;
+      padding: 0 .5rem;
+      font-size: 1rem;
+
+      @media (min-width: 1200px) {
+        font-size: .75rem;
+      }
+    }
+  }
+}

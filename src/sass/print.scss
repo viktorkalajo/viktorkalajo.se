@@ -1,0 +1,20 @@
+@import './colors';
+
+@media print {
+  html,
+  body {
+    font-size: 13px;
+  }
+
+  a,
+  a:hover,
+  a:visited,
+  a:focus {
+    color: $black;
+    text-decoration: none;
+  }
+}
+
+.nobreak {
+  page-break-inside: avoid;
+}
