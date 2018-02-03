@@ -5,6 +5,11 @@ const index = () => (
   <div>
     <PageBlock>
       <h1>viktorkalajo.se</h1>
+      <ul>
+        <li>
+          <a href="/cv">CV</a>
+        </li>
+      </ul>
     </PageBlock>
   </div>
 );
