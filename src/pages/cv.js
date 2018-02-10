@@ -38,7 +38,7 @@ const CV = () => (
         to="Q1 2018"
       />
 
-      <WorkExperience title="Developer" employer="Freelance" from="Q1 2011" to="present" />
+      <WorkExperience title="Developer" employer="Self-employed" from="Q1 2011" to="present" />
     </PageBlock>
 
     <PageBlock>
