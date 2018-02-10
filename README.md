@@ -29,7 +29,7 @@ npm run build
 Linted using eslint with prettier and sass-lint. Lints on pre-commit with [lint-staged](https://github.com/okonet/lint-staged).
 
 ### Deploying / Publishing
+Deploying/hosting via [netlify](https://app.netlify.com). Simply push to the master branch to initiate a deploy.
 
-```shell
-TODO
-```
+## Todo
+- Add pagination to blog posts as soon as i reach ~20

@@ -1,7 +1,5 @@
 module.exports = {
-  siteMetadata: {
-    title: 'Gatsby Default Starter'
-  },
+  siteMetadata: {},
   plugins: [
     'gatsby-plugin-react-helmet',
     `gatsby-plugin-sass`,
@@ -11,6 +9,14 @@ module.exports = {
       options: {
         trackingId: 'UA-48930470-1'
       }
-    }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `src`,
+        path: `${__dirname}/src/posts`,
+      }
+    },
+    `gatsby-transformer-remark`,
   ]
 };

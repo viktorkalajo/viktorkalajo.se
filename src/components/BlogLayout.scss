@@ -1,0 +1,61 @@
+@import '../sass/colors';
+
+.blog-layout__header {
+  background-color: $red;
+}
+
+.blog-layout__header-inner {
+  max-width: 30rem;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.blog-layout__title-link {
+  text-decoration: none;
+  transition: transform .2s ease-in-out;
+  display: block;
+
+  &:hover {
+    animation: shake .62s cubic-bezier(.36, .07, .19, .97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+  }
+
+  &:hover,
+  &:focus {
+    color: $white;
+    text-decoration: underline;
+  }
+}
+
+.blog-layout__title {
+  color: $white;
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+  border: none;
+}
+
+.blog-layout__description {
+  color: $white;
+  font-size: .75rem;
+  margin: 0;
+}
+
+.blog-layout__footer {
+  background-color: $red;
+  color: $white;
+  margin-top: 2rem;
+
+  a {
+    color: $white;
+  }
+}
+
+.blog-layout__footer-inner {
+  max-width: 30rem;
+  margin: 0 auto;
+  padding-top: 1px;
+  padding: 1rem;
+}
