@@ -12,4 +12,5 @@ Här samlar jag mina favoritresurser för frontendutveckling.
 - [JavaScript Weekly](http://javascriptweekly.com/) - nyhetsbrev på ämnet JavaScript
 - [React Newsletter](http://reactjsnewsletter.com//) - nyhetsbrev på ämnet React
 - [Node Weekly](https://nodeweekly.com//) - nyhetsbrev på ämnet Node
+- [An overview of JS testing 2018](https://medium.com/welldone-software/an-overview-of-javascript-testing-in-2018-f68950900bc3) - som titeln anger: en överblick över hur test ser ut i JS i början av 2018. Bra att ha som referens vid nya projekt när man väljer testramverk.
 
